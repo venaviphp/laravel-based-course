@@ -21,8 +21,8 @@ Route::get('/', function () {
 });
 
 # WorkerController
-Route::get('/workers', [WorkerController::class, 'index']);
-Route::get('/workers/show', [WorkerController::class, 'show']);
-Route::get('/workers/create', [WorkerController::class, 'create']);
-Route::get('/workers/update', [WorkerController::class, 'update']);
-Route::get('/workers/delete', [WorkerController::class, 'delete']);
+Route::get('/workers', [WorkerController::class, 'index'])->name('index');
+Route::get('/workers/{worker}', [WorkerController::class, 'show'])->name('show');
+Route::get('/workers/create', [WorkerController::class, 'create'])->name('create');
+Route::get('/workers/update', [WorkerController::class, 'update'])->name('update');
+Route::get('/workers/delete', [WorkerController::class, 'delete'])->name('delete');
