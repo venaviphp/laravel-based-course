@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Index</h1>
+    <h1>Show Page</h1>
     <div>
             <div>
                 <div><span>Имя: </span>{{ $worker->name }}</div>
@@ -20,7 +20,7 @@
                 <hr>
             </div>
             <div>
-                <a href="{{ route('index')}}">Назад</a>
+                <a href="{{ route('worker.index')}}">Назад</a>
             </div>
     </div>
 </body>
